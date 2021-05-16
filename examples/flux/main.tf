@@ -36,7 +36,9 @@ module "kubernetes" {
 
   on_demand_gpu_instance_type = "g4dn.xlarge"
 }
-
+=======
+modflux
+=======
 module "fluxcd" {
   source     = "./module/flux"
   depends_on = [module.kubernetes]
